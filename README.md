@@ -16,7 +16,8 @@ statistics, and better ensure their customers, by
 examining whether dashboard cameras can automatically detect drivers participating in distracting practices. Provided a dataset of dashboard camera pictures, State Farm is challenging Kagglers to classify each driver’s behavior, for example, what drivers are doing, and
 whether they are distracted.
 
-**Link to file in repo: **[Dataset Visualization](Dataset Visualization.ipynb)
+*Link to the file in repository: [Dataset Visualization](Dataset%20Visualization.ipynb)*
+
 The dataset used in this project was provided
 by State Farm through a Kaggle competition. The dataset contains a total of 102150 images
 split into a training set of 22424 images and
@@ -39,7 +40,40 @@ This dataset is available on Kaggle, under the State Farm competition: https://w
 
 
 ## Methodology
-
+[Dataset Visualization](Dataset%20Visualization.ipynb)
+#### Transfer Learning
+We initially explored creating our model from "scratch" but quickly realized our training set was limited. In the deep learning world, 20,000 images is a rather small dataset. After switching to transfer learning, we saw a dramatic improvement in model performance. We considered other pre-trained models such as VGG-19, MobileNet,Xception and ResNet-50. These models are usually trained on millions of images which helps especially when your training set is small. 
+#### Network Ensemble
+It was found that using an ensemble of different models yielded better results than using a
+single model as over fitting is a major concern
+in this problem. Thus, instead of relying on the
+predictions of one single model, we averaged
+the results of 4 of our models namely VGG-19,
+Xception, MobileNet and ResNet50 to get the
+final prediction values. By averaging different
+models, the variance of the trained model can be
+reduced and a lower loss can be achieved.
+#### Temporal Context
+Since the images are taken from a video clip,
+there exist many similar pictures which should
+belong to the same categories.The idea is that after the CNN models complete predictions for all testing images, for each
+test image, we find its K most similar images
+(including itself) based on pixel-wise L2 euclidean norm. Due to the large quantity of
+images to be processed, we had to shrink the
+original test images to 100 × 100 to shorten the
+computation tie. To find these K neighbors,
+K Nearest-neighbor classification based on K
+Dimensional-tree is used as KNN is computationally expensive as compared to other methods
 
 ## Result
 [Contribution guidelines for this project](README.md)
+After exploring various CNN models combined
+with network ensemble and KNN, our best performing results were achieved by calculating
+the weighted trimmed average of models predictions and finally calculated trimmed average
+for predictions across its K Nearest Neighbors
+with (K = 10).
+
+The final LB score (log loss) we
+got is 0.18110 which ranked 40 among 1438
+total participants (top 2%) on Kaggle’s public
+leaderboard.
