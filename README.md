@@ -14,7 +14,11 @@ This GitHub repository contains the material related to our project  for the cou
 [Report Link in repo ](DLP_project_StateFarm_Distracted_Driver_Detection.pdf)
 
 ## Overview
-State Farm is a large group of insurance companies throughout the United States with corporate headquarters in Bloomington, Illinois.
+The Center for Disease Control and Prevention
+(CDC) found that nearly one out of five car
+accidents is caused by a distracted driver.
+Unfortunately, this means around 425,000 individuals get injured and 3,000 deaths are noted
+because of distracted driving each year. State Farm is a large group of insurance companies throughout the United States with corporate headquarters in Bloomington, Illinois.
 Their initiative is to improve these disturbing
 statistics, and better ensure their customers, by
 examining whether dashboard cameras can automatically detect drivers participating in distracting practices. Provided a dataset of dashboard camera pictures, State Farm is challenging Kagglers to classify each driver’s behavior, for example, what drivers are doing, and
@@ -46,7 +50,7 @@ This dataset is available on Kaggle, under the State Farm competition: https://w
 ## Methodology
 * [Transfer Learning and KNN implementation](Transfer%20Learning%20Models%20and%20KNN.ipynb)
 * [Network Ensemble](Ensemble%20on%20Test%20set.ipynb)
-* For generating predictions and Undersampled dataset training different versions of Kaggle notebook: https://www.kaggle.com/k163665/to-detect-distracted-drivers
+* For generating predictions and Undersampled dataset training, different versions of Kaggle notebook: https://www.kaggle.com/k163665/to-detect-distracted-drivers
 
 
 #### Transfer Learning
