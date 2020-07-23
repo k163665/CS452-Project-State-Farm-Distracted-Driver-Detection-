@@ -45,8 +45,8 @@ This dataset is available on Kaggle, under the State Farm competition: https://w
 
 ## Methodology
 * [Transfer Learning and KNN implementation](Transfer%20Learning%20Models%20and%20KNN.ipynb)
-* [Network Ensemble](Transfer%20Learning%20Models%20and%20KNN.ipynb)
-* For generating predictions and Undersampled dataset training different versions of Kaggle notebook: 
+* [Network Ensemble](Ensemble%20on%20Test%20set.ipynb)
+* For generating predictions and Undersampled dataset training different versions of Kaggle notebook: https://www.kaggle.com/k163665/to-detect-distracted-drivers
 
 
 #### Transfer Learning
