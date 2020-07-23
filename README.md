@@ -54,7 +54,7 @@ This dataset is available on Kaggle, under the State Farm competition: https://w
 
 
 #### Transfer Learning
-We initially explored creating our model from "scratch" but quickly realized our training set was limited. In the deep learning world, 20,000 images is a rather small dataset. After switching to transfer learning, we saw a dramatic improvement in model performance. We considered other pre-trained models such as VGG-19, MobileNet,Xception and ResNet-50. These models are usually trained on millions of images which helps especially when your training set is small. 
+We initially explored creating our model from "scratch" but quickly realized our training set was limited. In the deep learning world, 20,000 images is a rather small dataset. After switching to transfer learning, we saw a dramatic improvement in model performance. We considered other pre-trained models such as VGG-19, MobileNet, Xception and ResNet-50. These models are usually trained on millions of images which helps especially the training set is small. 
 #### Network Ensemble
 It was found that using an ensemble of different models yielded better results than using a
 single model as over fitting is a major concern
@@ -89,3 +89,4 @@ The final LB score (log loss) we
 got is 0.18110 which ranked 40 among 1438
 total participants (top 2%) on Kaggle’s public
 leaderboard.
+![Final predictions on test set](pred%20on%20test.PNG)
