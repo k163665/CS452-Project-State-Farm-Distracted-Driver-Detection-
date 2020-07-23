@@ -63,10 +63,10 @@ images to be processed, we had to shrink the
 original test images to 100 × 100 to shorten the
 computation tie. To find these K neighbors,
 K Nearest-neighbor classification based on K
-Dimensional-tree is used as KNN is computationally expensive as compared to other methods
+Dimensional-tree is used as KNN is computationally expensive as compared to other methods.
 
 ## Result
-[Contribution guidelines for this project](README.md)
+
 After exploring various CNN models combined
 with network ensemble and KNN, our best performing results were achieved by calculating
 the weighted trimmed average of models predictions and finally calculated trimmed average
