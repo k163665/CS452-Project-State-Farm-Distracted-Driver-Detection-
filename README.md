@@ -4,7 +4,7 @@ This GitHub repository contains the material related to our project  for the cou
 ## Project Members:
 
 - Radheem Razi *(K163645)*
-- Abdul Mannan *(K163620)* @MannanMalik3998
+- Abdul Mannan *(K163620)* 
 - Murtaza Multanwala *(K163618)*
 - Shahyar *(K163750)*
 - Saira *(K163665)*
@@ -16,6 +16,7 @@ statistics, and better ensure their customers, by
 examining whether dashboard cameras can automatically detect drivers participating in distracting practices. Provided a dataset of dashboard camera pictures, State Farm is challenging Kagglers to classify each driver’s behavior, for example, what drivers are doing, and
 whether they are distracted.
 
+**Link to file in repo: **[Dataset Visualization](Dataset Visualization.ipynb)
 The dataset used in this project was provided
 by State Farm through a Kaggle competition. The dataset contains a total of 102150 images
 split into a training set of 22424 images and
@@ -36,4 +37,9 @@ There are 10 classes including safe driving in the dataset:
 
 This dataset is available on Kaggle, under the State Farm competition: https://www.kaggle.com/c/state-farm-distracted-driver-detection
 
-[Contribution guidelines for this project](CS452-Project-State-Farm-Distracted-Driver-Detection-/README.md)
+
+## Methodology
+
+
+## Result
+[Contribution guidelines for this project](README.md)
