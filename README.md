@@ -3,9 +3,9 @@ This GitHub repository contains the material related to our project  for the cou
 
 ## Project Members:
 
-- Radheem Razi *(K163645)*
 - Abdul Mannan *(K163620)* 
 - Murtaza Multanwala *(K163618)*
+- Radheem Razi *(K163645)*
 - Shahyar *(K163750)*
 - Saira *(K163665)*
 
@@ -54,7 +54,7 @@ This dataset is available on Kaggle, under the State Farm competition: https://w
 
 
 #### Transfer Learning
-We initially explored creating our model from "scratch" but quickly realized our training set was limited. In the deep learning world, 20,000 images is a rather small dataset. After switching to transfer learning, we saw a dramatic improvement in model performance. We considered other pre-trained models such as VGG-19, MobileNet, Xception and ResNet-50. These models are usually trained on millions of images which helps especially the training set is small. 
+We initially explored creating our model from "scratch" but quickly realized our training set was limited. In the deep learning world, 20,000 images is a rather small dataset. After switching to transfer learning, we saw a dramatic improvement in model performance. We considered other pre-trained models such as VGG-19, MobileNet, Xception and ResNet-50. These models are usually trained on millions of images which helps especially when the training set is small. 
 #### Network Ensemble
 It was found that using an ensemble of different models yielded better results than using a
 single model as over fitting is a major concern
@@ -68,7 +68,7 @@ reduced and a lower loss can be achieved.
 #### Temporal Context
 Since the images are taken from a video clip,
 there exist many similar pictures which should
-belong to the same categories.The idea is that after the CNN models complete predictions for all testing images, for each
+belong to the same categories. The idea is that after the CNN models complete predictions for all testing images, for each
 test image, we find its K most similar images
 (including itself) based on pixel-wise L2 euclidean norm. Due to the large quantity of
 images to be processed, we had to shrink the
