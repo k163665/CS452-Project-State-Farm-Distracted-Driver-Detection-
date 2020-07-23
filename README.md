@@ -9,6 +9,10 @@ This GitHub repository contains the material related to our project  for the cou
 - Shahyar *(K163750)*
 - Saira *(K163665)*
 
+**Project Report:**
+
+[Report Link in repo ](DLP_project_StateFarm_Distracted_Driver_Detection.pdf)
+
 ## Overview
 State Farm is a large group of insurance companies throughout the United States with corporate headquarters in Bloomington, Illinois.
 Their initiative is to improve these disturbing
@@ -40,7 +44,11 @@ This dataset is available on Kaggle, under the State Farm competition: https://w
 
 
 ## Methodology
-[Dataset Visualization](Dataset%20Visualization.ipynb)
+* [Transfer Learning and KNN implementation](Transfer%20Learning%20Models%20and%20KNN.ipynb)
+* [Network Ensemble](Transfer%20Learning%20Models%20and%20KNN.ipynb)
+* For generating predictions and Undersampled dataset training different versions of Kaggle notebook: 
+
+
 #### Transfer Learning
 We initially explored creating our model from "scratch" but quickly realized our training set was limited. In the deep learning world, 20,000 images is a rather small dataset. After switching to transfer learning, we saw a dramatic improvement in model performance. We considered other pre-trained models such as VGG-19, MobileNet,Xception and ResNet-50. These models are usually trained on millions of images which helps especially when your training set is small. 
 #### Network Ensemble
